@@ -4,8 +4,11 @@ build:
   commands:
     build:
       - npm install
+  env:
+    - name: FOO
+      value: "bar"
 run:
-  command: npm start
-  network:
-    port: 8080
-
+  command: node server.js
+  network: 
+    port: 8000
+    env: PORT 
