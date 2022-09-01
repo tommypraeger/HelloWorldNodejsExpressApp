@@ -5,7 +5,6 @@ build:
     build:
       - npm install
 run:
-  runtime-version: example
   command: npm start
   network:
     port: 8080
